@@ -1,0 +1,252 @@
+<!-- This is the beginning of an HTML document -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- The head element contains metadata about the HTML document, such as the title, character set, and links to stylesheets and scripts -->
+  <head>
+    <!-- The viewport meta tag is used to specify how the website should be displayed on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The charset meta tag specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    <!-- The title element specifies the title of the HTML document -->
+    <title>ESSEXTYPING</title>
+    <!-- The link element with a rel attribute of "stylesheet" tells the browser that the linked document is a stylesheet and provides the means to apply the styles defined in the stylesheet to a web page -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <!-- The body element contains the main content of the HTML document -->
+  <body> 
+    <!-- This section element represents a generic section of the document, such as a chapter or a section of a table of contents -->
+    <section class="navigation w3-metro-light-blue w3-container">
+      <!-- The button element represents a clickable button -->
+      <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
+      <!-- The nav element represents a section of the document intended for navigation -->
+      <nav class="nav-container">
+        <div class="logo w3-padding-large"> 
+          <!-- The p element represents a paragraph -->
+          <p>ESSEXTYPING</p>
+        </div>
+        <div class="mobile-button">
+          <!-- The span element is used to group inline-elements in a document -->
+          <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+        </div>
+        <div class="links">
+          <!-- The a element represents a hyperlink -->
+          <a href="#about" >ABOUT</a>-
+          <a href=choose.html >START TYPING</a>-
+          <a href="#contact" >CONTACT</a>            
+        </div>
+ <!-- This div element has an id attribute of "mobile-sidenav" and a class attribute of "mobile-links w3-sand". The id attribute specifies a unique id for the element, while the class attribute specifies a class name for the element. These attributes can be used to apply styles to the element using CSS. -->
+<div id="mobile-sidenav" class="mobile-links w3-sand">
+    <!-- The a element represents a hyperlink -->
+    <a href="javascript:void(0)" 
+    </a>
+    <a href="#about" onclick="toggleMobileNavigation()">ABOUT</a>
+    <a href="choose.html" onclick="toggleMobileNavigation()">START TYPING</a>
+    <a href="#contact" onclick="toggleMobileNavigation()">CONTACT</a>
+  </div>
+  <!-- The nav element represents a section of the document intended for navigation -->
+  </nav>
+  <!-- This section element represents a generic section of the document, such as a chapter or a section of a table of contents -->
+  </section>
+  <!-- This section element represents a generic section of the document, such as a chapter or a section of a table of contents -->
+  <section class="hero w3-padding-large w3-container">
+    <!-- The h1 element represents a heading -->
+    <h1 style="display: inline;">Type faster, think smarter with ESSEXTYPING!</h1>
+    <!-- The p element represents a paragraph -->
+    <p>"Code is the language of the future." - Tim Berners-Lee</p>
+    <!-- The a element represents a hyperlink -->
+      <a href=choose.html class="w3-padding-large w3-round">Start My Practice</a>
+    </section>
+
+    <section class="about w3-padding-large w3-container" id="about">
+      <div class="content container w3-round-large">
+        <h2 style="text-align: center;">- Our Mission -</h2>
+        <p style="text-align: center;">To steer your idea in the right direction.</p>
+        <h3 style="text-align: center;">- About -</h3>
+        <p>Idea for a typing practice and coding website is to create a platform that allows users to improve their typing skills while also 
+          learning the basics of computer programming. The website could feature a variety of typing exercises and games, as well as lessons on core programming concepts such as variables, loops, and functions."</p>
+        <p>To provide a comprehensive and accessible platform for individuals to learn and improve their coding and typing skills.</p>
+<p>To offer high-quality courses and tutorials taught by experienced instructors and industry experts.</p>
+<p> provide a supportive and collaborative community where users can connect with others, share tips and advice, and work on projects together.</p>
+<p>To help users advance their careers in the world of technology by providing the skills and knowledge they need to succeed.</p>
+<p>To foster a love of learning and a passion for technology, and to inspire the next generation of coders and typists.</p>
+<p>Overall, the "Our Mission" section of a coding and typing educational website should provide a clear and concise statement of the website's purpose and goals, and should reflect its commitment to helping users succeed in the world of technology.</p>
+      </div>
+
+      <div class="leadership content container w3-margin-top w3-round-large">
+        <h3 style="text-align: center;">- Leadership -</h3>
+        <p style="text-align: center;"><em>"Leadership is about being a servant first."</em> <strong>- Allen West</strong></p>
+        <div class="l-cards">
+          <div class="l-card">
+              <center>
+            <div class="circular-portrait">
+              <img src="photo_2022-12-12_20-34-09.jpg" alt="Photo by Your name | Unsplash"/>
+            </div>
+              </center>
+            <h4><strong>Your Name</strong></h4>
+            <p style="margin-top: 10 !important;"><strong>CEO<strong></p>
+            </div>
+            <p>I have a deep passion for technology and coding, and I am committed to providing our users with the best possible experience and resources to help them succeed in their coding endeavors. With my expertise and leadership, I strive to make our website a top destination for coders of all skill levels to learn, grow, and create amazing projects.
+
+</p>
+          </div>
+      </div>
+    </section>
+    <!-- The section element with a class of "testimonials" and style of "padding: 50px;" is used to contain customer stories. -->
+    <section class="testimonials w3-container w3-panel" style="padding: 50px;">
+      <!-- The h2 element with a style of "text-align: center;" is used to display a heading 
+        indicating that the section contains customer stories. -->
+      <h2 style="text-align: center;">- Some of our customer stories -</h2>
+        <!-- The div element with a class of "slideshow-container" is used to contain a slideshow of customer stories. -->
+      <div class="slideshow-container">
+
+        <!-- The div elements with a class of "mySlides" are used to contain individual customer stories, 
+          which are displayed as a slide in the slideshow. -->
+      <div class="mySlides">
+        <p><q><em>I've been using the typing and coding web site for a few weeks now, and I'm really impressed with the quality of the content. The exercises are challenging but not overwhelming, and I've noticed a significant improvement in my typing speed and accuracy. The coding tutorials are also very helpful, and I've learned a lot about different programming languages. I would definitely recommend this site to anyone looking to improve their skills.</em></q></p>
+        <p class="author"><strong>- Satoshi Nakamoto, Student</strong></p>
+      </div>
+
+      <div class="mySlides">
+        <p><q><em>I discovered this site by accident and I'm glad I did! I love the fact that the exercises are fun and engaging, and the option to track my progress and compare my results to others is a great motivator. I've also learned a lot about different programming languages through the site's tutorials. I would definitely recommend this site to anyone looking to improve their typing and coding skills in a fun and interactive way.</em></q></p>
+        <p class="author"><strong>- Lena Golovach, Looking for a fun in each website</strong></p>
+      </div>
+
+      <div class="mySlides">
+        <p><q><em>As a high school student, I struggled with typing speed and accuracy, which made it difficult for me to complete my assignments and projects on time. I discovered the typing practice and coding website, and started using it regularly to improve my typing skills. The interactive challenges and games on the website helped me to learn the proper techniques for typing, and I was able to track my progress and see my typing speed and accuracy improve over time. Thanks to the website, I was able to improve my typing skills and complete my assignments faster, which helped me to get better grades and be more successful in school.</em></q></p>
+        <p class="author"><strong> - Sergey Karkushov, High school student</strong></p>
+      </div>
+       <!-- The a elements with a class of "prev" and "next" are used to navigate between slides in the slideshow. -->
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+          <!-- The span elements with a class of "dot" are used to display dots that represent the slides in the slideshow,
+             and can be clicked to navigate to a specific slide. -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>      
+    </section>
+
+    <section id="consulting" class="w3-container container consulting content">
+      <h2 style="text-align: center;">- What we do -</h2>
+      <div class="c-card w3-margin-top">
+        <p>Providing a platform for individuals to learn and practice coding and typing skills</p>
+      </div>
+      <div class="c-card c-card-right w3-margin-top">
+        <p>Offering courses and tutorials on a variety of coding languages and typing techniques</p>
+      </div>
+      <div class="c-card w3-margin-top">        
+        <p>Providing tools and resources for users to improve their coding and typing abilities</p>
+      </div>
+      <div class="c-card  c-card-right w3-margin-top">
+        <p>Hosting competitions and challenges to help users test and improve their skills</p>
+      </div>
+      <div class="c-card w3-margin-top">
+        <p>Connecting users with potential employers or clients looking for skilled coders and typists</p>
+      </div>
+      <div class="c-card  c-card-right w3-margin-top">
+        <p>Providing support and guidance from experienced instructors and mentors to help users overcome challenges and achieve their goals</p>
+      </div>
+    </section>
+
+    <section class="w3-panel w3-container content why-us" style="padding: 50px;">
+      <h2 style="text-align: center;">- Why choose us? -</h2>
+      <div class="container boxes">
+        <div class="box w3-round-large">
+          More than 3 years of experience
+        </div>
+        <div class="box w3-round-large">
+          Over 80 of consultations
+        </div>
+        <div class="box w3-round-large">
+          Over 40 happy clients
+        </div>
+        <div class="box w3-round-large">
+          100% secure
+        </div>
+        <div class="box w3-round-large" style="background-color: rgb(153, 255, 187);">
+          Our CEO is Essex student
+        </div>
+      </div>
+    </section>
+
+    <section class="contact w3-container contact" id="contact">
+      <div class="short-contact">
+        <h2>- Our contact info - </h2>
+        <div class="w3-large contact-info">
+          <i class="fa fa-address-card"></i><span style="margin-left:10px;"><a href="https://www.google.com/maps/place/Constable+Building/@51.878612,0.9520367,19.12z/data=!4m13!1m7!3m6!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2sNew+York,+NY,+USA!3b1!8m2!3d40.7127753!4d-74.0059728!3m4!1s0x47d90564be3ed22d:0x355de075f83fe343!8m2!3d51.8787677!4d0.9524869" target="_blank">Wivenhoe park, Colchester, UK</a></span><br>
+          <i class="fa fa-envelope"></i><span style="margin-left:10px;"><a href="connect@factor.com">veselovhere@gmail.com</a></span><br>
+          <i class="fa fa-phone-square"></i><span style="margin-left:10px;"><a href="connect@factor.com">+447495557204</a></span><br>
+        </div>
+        <h3 class="w3-margin-top">- Follow us </h3>
+        <div class="w3-large contact-info">
+          <i class="fa fa-linkedin-square"></i><span style="margin-left:10px;"><a href="https://www.linkedin.com/in/vladislav-veselov-3b268a24a/" target="_blank" style="text-decoration: none;">- LinkedIn</a></span><br>
+          <i class="fa fa-facebook-square"></i><span style="margin-left:10px;"><a href="https://www.facebook.com/wormvlad" target="https://www.facebook.com/wormvlad" style="text-decoration: none;">- Facebook</a></span><br>
+          <i class="fa fa-twitter-square"></i><span style="margin-left:10px;"><a href="https://twitter.com/ternplus" target="_blank" style="text-decoration: none;">- Twitter</a></span><br>
+        </div>
+      </div>
+      <div class="form w3-margin-top">
+        <div class="container w3-round-xlarge">
+          <form class="w3-highway-blue w3-padding-large w3-round-large">
+            <h3 style="text-align: center;"><i class="fa fa-check-square-o" style="font-size: 15px;"></i>Schedule a practice session</h3>
+            <label for="fname">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <label for="lname">Your email</label>
+            <input type="text" id="email" name="email" placeholder="Your email">
+            <label for="lname">Pick a date</label><br>
+            <input type="date" id="date" name="date" placeholder="Your date"><br><br>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input class="w3-round-large" type="submit" value="Submit" onclick="submitAnswer()">
+
+            <script>
+              function submitAnswer() {
+                alert('Your answer has been submitted.');
+              }
+            </script>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- // This script is used to toggle the mobile navigation menu and provide a back to top button. -->
+  <script async>
+
+// Get the back to top button element
+const backToTop = document.getElementById("back-to-top");
+
+// Toggle the mobile navigation menu
+function toggleMobileNavigation() {
+  // Get the mobile navigation element
+  const mobileNavigation = document.getElementById("mobile-sidenav");
+  // Toggle the 'mobile-links-active' class on the mobile navigation element
+  mobileNavigation.classList.toggle('mobile-links-active');
+}
+
+// Scroll the page to the top
+function goToTop() {
+  // Set the scroll position of the body and document element to 0
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// Show or hide the back to top button based on the scroll position
+function scroll() {
+  // If the body or document element has been scrolled more than 20px from the top,
+  // show the back to top button, otherwise hide it
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+}
+
+// Run the 'scroll' function every time the window is scrolled
+window.onscroll = function() {scroll()};
+  </script>
+   <script src="async.js"></script>
+  </body>
+</html>

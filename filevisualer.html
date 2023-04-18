@@ -1,0 +1,96 @@
+<!-- Include the Papa Parse library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papa.min.js"></script>
+
+<!-- Include jQuery for convenience -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Create a file input to allow the user to upload a .csv file -->
+<input type="file" id="file-input" accept=".csv">
+
+<!-- Create a table element to display the .csv data -->
+<table id="csv-table"></table>
+
+<!-- Create a button to remove rows and columns -->
+<button id="remove-button">Remove</button>
+
+<!-- Create a button to download the modified .csv file -->
+<button id="download-button">Download</button>
+
+<!-- Add some JavaScript to handle the file input and table rendering -->
+<script>
+  // Wait for the DOM to be ready
+  $(document).ready(function() {
+    // Handle the file input change event
+    $('#file-input').change(function() {
+      // Get the file from the input
+      const file = this.files[0];
+
+      // Use Papa Parse to parse the .csv file
+      Papa.parse(file, {
+        complete: function(results) {
+          // Get the .csv data and the table element
+          const data = results.data;
+          const table = $('#csv-table');
+
+          // Clear the table
+          table.empty();
+
+          // Iterate through the .csv data and add rows to the table
+          data.forEach(function(row) {
+            // Create a new row element
+            const tr = $('<tr></tr>');
+
+            // Iterate through the row data and add cells to the row
+            row.forEach(function(cell) {
+              // Create a new cell element
+              const td = $('<td></td>');
+
+              // Set the cell content and append it to the row
+              td.text(cell);
+              tr.append(td);
+            });
+
+            // Append the row to the table
+            table.append(tr);
+          });
+        }
+      });
+    });
+
+    // Handle the remove button click event
+    $('#remove-button').click(function() {
+      // Get the selected cells
+      const selectedCells = $('td.selected');
+
+      // Remove the selected cells
+      selectedCells.remove();
+    });
+
+    // Handle the download button click event
+    $('#download-button').click(function() {
+      // Get the table data
+      const data = [];
+      $('#csv-table tr').each(function() {
+        const row = [];
+        $(this).find('td').each(function() {
+          row.push($(this).text());
+        });
+        data.push(row);
+      });
+
+      // Convert the data to a .csv string
+      const csv = Papa.unparse(data);
+
+      // Create a download link for the .csv file
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+  link.download = 'modified.csv';
+
+  // Append the link to the document and click it
+  document.body.appendChild(link);
+  link.click();
+    
+    }
+    )
+}
+)

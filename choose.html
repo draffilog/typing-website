@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>ESSEXTYPING</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+      </head>
+    <title>Typing Practice</title>
+  <style>
+    body {
+  background-color: #2f343f;
+}
+
+.box-container {
+  width: 960px; /* set the desired width */
+  margin: 0 auto; /* center the element horizontally */
+}
+
+.box img {
+  max-width: 50%; /* set the maximum width to 50% of the box's width */
+  height: auto; /* maintain the aspect ratio */
+}
+
+.box {
+  font-family: monospace; /* Use a monospace font for the text */
+  font-size: 20px; /* Set the font size to a larger size */
+  display: inline-block;
+  width: 400px; /* increase the width of the box */
+  height: 300px; /* increase the height of the box */
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  overflow: hidden;
+  background-color: #8a92eb;
+}
+
+.box h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  color: #333;
+  margin: 0.5em 0;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  text-decoration: none;
+}
+
+.box a:hover {
+  background-color: #eee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    
+  </style>
+</head>
+<section class="navigation w3-metro-light-blue w3-container">
+
+    <nav class="nav-container">
+      <div class="logo w3-padding-large"> 
+        <p>ESSEXTYPING</p>
+      </div>
+      <div class="mobile-button">
+        <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+      </div>
+      <div class="links">
+        <a href="index.html#about" >ABOUT</a>-
+        <a href=choose.html >START TYPING</a>-
+        <a href="index.html#contact" >CONTACT</a>            
+      </div>
+    </nav>
+  </section>
+  <body>
+    <div class="box-container">
+      <div class="box-container">
+        <div class="box">
+          <a href="python.html">
+            <img src="pythonlogo.png" alt="Python logo">
+            <h2>Python</h2>
+          </a>
+        </div>
+      <div class="box">
+        <a href="java.html">
+          <img src="javalogo.png" alt="Java logo">
+          <h2>Java</h2>
+        </a>
+      </div>
+      <div class="box">
+        <a href="c++.html">
+          <img src="c++logo.png" alt="C++ logo">
+          <h2>C++</h2>
+        </a>
+      </div>
+      <div class="box">
+        <a href="randomquote.html">
+          <img src="quotelogo.png" alt="Quote logo">
+          <h2>Random Quote</h2>
+        </a>
+      </div>
+      <div class="box">
+        <a href="yourcode.html">
+          <img src="codelogo.png" alt="Code logo">
+          <h2>Your own code</h2>
+        </a>
+      </div>
+      <div class="box">
+        <a href="yopta.html">
+          <img src="yoptascript.png" alt="Yopra logo">
+          <h2>Yopta Script</h2>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
